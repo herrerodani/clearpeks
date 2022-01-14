@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Acordeón</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <p>This is an accordion example.</p>
+    <dl>
+    <dt class="accordion">Section 1</dt>
+    <dd class="panel">
+        <p>Section 1 Content...</p>
+    </dd>
+    <dt class="accordion">Section 2</dt>
+    <dd class="panel">
+        <p>Section 2 Content...</p>
+    </dd>
+    <dt class="accordion" onclick="loadDoc()">Section 3</dt>
+    <dd class="panel" id="ajax">
+        <p>Section 3 Content...</p>
+    </dd>
+    </dl>
+    <script src="./index.js"></script>
+</body>
+</html>
