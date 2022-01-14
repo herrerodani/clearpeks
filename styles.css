@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: #eee;
@@ -11,9 +12,23 @@
   transition: 0.4s;
 }
 
+.accordion:after {
+  content: "➕";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
 .active,
 .accordion:hover {
   background-color: #ccc;
+}
+
+.active:after {
+  content: "➖";
+  /* Unicode character for "minus" sign (-) */
 }
 
 .panel {
